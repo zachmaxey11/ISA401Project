@@ -323,3 +323,18 @@ str(TE_data)
 
 write_csv(TE_data, file="13-23_TE_Data.csv")
 
+
+# **Running Reports -------------------------------------------------------
+
+# For QB data
+create_report(qb_data)
+
+# For RB data
+create_report(rb_data)
+
+# For WR data
+create_report(WR_data)
+
+# For TE data
+create_report(TE_data)
+
