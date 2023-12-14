@@ -56,3 +56,16 @@ dat <- dplyr::bind_rows(dat)
 str(dat)
 
 write.csv(dat, "profref_fantasy.csv")
+
+
+# **Generating a Report ---------------------------------------------------
+
+# Load the DataExplorer package
+library(DataExplorer)
+
+# Now that you've written your data to a CSV, you can read it back in
+dat <- read.csv("profref_fantasy.csv")
+
+# Exploring the data in a report
+create_report(dat)
+plot_histogram(dat)
